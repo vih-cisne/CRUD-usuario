@@ -23,7 +23,6 @@ const updateUserService = (id, userToUpdate) => {
   newUser.updatedOn = new Date();
 
   users[userIndex] = { ...users[userIndex], ...newUser };
-  console.log(objectToReturn);
 
   const {
     email,
