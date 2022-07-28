@@ -22,8 +22,8 @@ const loginService = (email, password) => {
     return objectToReturn;
   }
   
-  const token = jwt.sign({ email: email, isAdm: user.isAdm }, "SECRET_KEY", {
-    expiresIn: "24h",
+  const token = jwt.sign({ email: email, isAdm: user.isAdm }, "1234", {
+    expiresIn: "24h"
   });
 
   objectToReturn.status = 200;

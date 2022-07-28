@@ -1,4 +1,4 @@
-/*import users from "../database/users"
+import users from "../database/users"
 
 
 const listUsersService = () => {
@@ -11,12 +11,5 @@ const listUsersService = () => {
     return object
 }
 
-export default listUsersService*/
+export default listUsersService
 
-import users from "../database/users";
-
-const listUsersService = () => {
-    return users;
-};
-
-export default listUsersService;

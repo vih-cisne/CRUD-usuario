@@ -10,7 +10,23 @@ const userProfileService = (token) => {
 
     if(userInfo) {
 
-        objectToReturn.answer = {user: userInfo}
+        const {
+            id,
+            email,
+            name,
+            isAdm,
+            createdOn,
+            updatedOn
+        } = userInfo
+
+        objectToReturn.answer = {
+            id,
+            email,
+            name,
+            isAdm,
+            createdOn,
+            updatedOn
+        }
         objectToReturn.status = 200
 
     }

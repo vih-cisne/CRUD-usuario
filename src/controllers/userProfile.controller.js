@@ -2,7 +2,7 @@ import userProfileService from "../services/userProfile.service"
 
 const userProfileController = (req, res) => {
 
-    let token = req.headers.authorization 
+    let token = req.headers.authorization.split(' ')[1] 
 
     const result = userProfileService(token)
 
